@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.main-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 5fr 2fr ;
+    grid-auto-rows: 80vh;
+    grid-column-gap: 20px;
+}
+.imgs-products{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.imgs-products::-webkit-scrollbar{
+    background-color: rgba(179, 27, 27, 0.5);
+    border-radius: 10px;
+    width: 10px;
+}
+
+.imgs-products::-webkit-scrollbar-thumb {
+    background-color: #ca3b3a;
+    border-radius: 10px;
+}
+.imgs-products img {
+    padding: 10px;
+    width:80px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.imgs-products img:hover{
+    background-color: #ca3b3a;
+}
+.img-tamb {
+    grid-column: 2/3;
+
+}
+.img-tamb .content-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+.img-tamb img {
+    width: 400px;
+    height: auto;
+}
+.desc-product{
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.desc-product .title , .desc, .preco{
+    margin-bottom: 1rem;
+}
+.desc-product .title h1 {
+    font-size: 2rem;
+    color:#ca3b3a;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px 5px #000000;
+}
+.desc-product .desc .star,
+.desc-product .desc .star .icon-star{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color:#ca3b3a;
+}
+.desc-product .desc .star .icon-star svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.desc-product .desc .star .icon-desc{
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-left: 20px;
+}
+.desc-product .title p,
+.desc-product .desc p  {
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+.desc-product .desc p {
+    margin-top: 1rem;
+}
+.desc-product .desc span {
+    color:#555;
+    font-size: 0.8rem;
+}
+.desc-product .preco span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.desc-product .preco button {
+    background-color: #ca3b3a;
+    font-size: 0.775rem;
+    color:#fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+.desc-product .preco button:hover,
+.desc-product .frete form button:hover  {
+    background-color: #222;
+}
+.desc-product .frete form label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+.desc-product .frete form label svg {
+    width: 25px;
+    height: 20px;
+    margin-right: 10px;
+}
+.desc-product .frete form input {
+    outline: none;
+    padding: 5px;
+}
+.desc-product .frete form button {
+    padding: 8px 10px;
+    background-color: #ca3b3a;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+}
+.frete .endereco{
+    display: block;
+    position:static;
+    margin-top: 5px;
+}
+.frete .endereco p{
+    display: none;
+    color: #222;
+    font-size: .8rem;
+    line-height: 1.3rem;
+}
+.frete .endereco .preco-calculado{
+    display: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+@media (min-width: 500px) and (max-width:850px){
+    .main-grid{
+        grid-template-columns: 4fr 2fr;
+        grid-auto-rows: auto;
+        grid-row-gap: 10px;
+    }
+    .imgs-products {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        flex-direction: row;
+        overflow-y: hidden;
+        padding: 10px;
+        border-top: 2px solid #ca3b3a;
+    }
+    .imgs-products img {
+        padding: 10px;
+        width:80px;
+        height: 80px;
+        margin-bottom: 0px;
+        border-radius: 5px;
+    }
+    .imgs-products::-webkit-scrollbar{
+        border-radius: 5px;
+        height: 5px;
+    }
+    
+    .imgs-products::-webkit-scrollbar-thumb {
+        background-color: #ca3b3a;
+        border-radius: 5px;
+    }
+    .img-tamb {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .img-tamb .content-img {
+        width: 100%;
+        height: 400px;
+        margin: auto;
+        padding: 30px 0px;
+        
+    }
+    .img-tamb img {
+        width: 300px;
+        height: auto;
+    }
+    .desc-product {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .desc-product .title , .desc, .preco{
+        margin-bottom: 0.8rem;
+    }
+    .desc-product .title h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+    .desc-product .title p,
+    .desc-product .desc p  {
+        font-size: 0.775rem;
+    }
+    .desc-product .desc p {
+        margin-top: 0.8rem;
+    }
+    .desc-product .desc span {
+        font-size: 0.7rem;
+    }
+    .desc-product .preco span {
+        font-size: 1.2rem;
+        margin-right: 0.8rem;
+    }
+    .desc-product .preco button {
+        font-size: 0.675rem;
+        padding: 8px 15px;
+    }
+    .desc-product .frete form label svg {
+        width: 20px;
+        height: 15px;
+        margin-right: 10px;
+    }
+    .desc-product .frete form input {
+        padding: 3px;
+    }
+    .desc-product .frete form button {
+        padding: 6px 8px;
+    }
+    .frete .endereco p{
+        font-size: .75rem;
+    }
+    .frete .endereco .preco-calculado{
+        font-size: 0.85rem;
+    }
+}
+@media (max-width: 499px){
+    .main-grid{
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        grid-row-gap: 10px;
+    }
+    .imgs-products {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        flex-direction: row;
+        overflow-y: hidden;
+        padding: 5px;
+        border-top: 2px solid #ca3b3a;
+    }
+    .imgs-products img {
+        padding: 10px;
+        width:60px;
+        height: 60px;
+        margin-bottom: 0px;
+        border-radius: 5px;
+    }
+    .imgs-products::-webkit-scrollbar{
+        border-radius: 5px;
+        height: 7px;
+    }
+    
+    .imgs-products::-webkit-scrollbar-thumb {
+        background-color: #ca3b3a;
+        border-radius: 5px;
+    }
+    .img-tamb {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .img-tamb .content-img {
+        width: 100%;
+        height: 360px;
+        margin: auto;
+        padding: 30px 0px;
+        
+    }
+    .img-tamb img {
+        width: 230px;
+    }
+    .desc-product {
+        margin: 25px 10px;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .desc-product .title , .desc, .preco{
+        margin-bottom: 0.8rem;
+    }
+    .desc-product .title h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .desc-product .title p,
+    .desc-product .desc p  {
+        font-size: 0.8rem;
+    }
+    .desc-product .desc p {
+        margin-top: 1rem;
+    }
+    .desc-product .desc span {
+        font-size: 0.7rem;
+    }
+    .desc-product .preco span {
+        font-size: 1.2rem;
+        margin-right: 0.8rem;
+    }
+    .desc-product .preco button {
+        font-size: 0.675rem;
+        padding: 8px 15px;
+    }
+    .desc-product .frete form label svg {
+        width: 20px;
+        height: 15px;
+        margin-right: 10px;
+    }
+    .desc-product .frete form input {
+        padding: 3px;
+    }
+    .desc-product .frete form button {
+        padding: 6px 8px;
+    }
+    .frete .endereco p{
+        font-size: .75rem;
+    }
+    .frete .endereco .preco-calculado{
+        font-size: 0.85rem;
+    }
+}    

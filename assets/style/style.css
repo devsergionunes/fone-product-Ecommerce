@@ -1,0 +1,35 @@
+@import './header.css';
+@import './main.css';
+@import './footer.css';
+body {
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+
+}
+.conteiner {
+    max-width: 1140px;
+    margin: auto;
+}
+@media (min-width: 500px) and (max-width: 850px){
+    body {
+        padding: 0px 20px;
+        height: auto;
+    }
+    .conteiner{
+        width: 100%;
+        margin: 0px;
+    }
+}
+@media (max-width: 499px){
+    body {
+        padding: 0px;
+        height: auto;
+    }
+    .conteiner{
+        width: 100%;
+        margin: 0px;
+    }
+}
