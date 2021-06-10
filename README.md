@@ -9,6 +9,7 @@
 - Requisiçao do produto a um arquivo externo em formato json simulando um banco de dados 
 - Menu mobile interativo
 - Pagina responsiva
+- Validaçao de diferentes modelos de cep por Regular Expression
 <hr>
 
 ## Versao Mobile:

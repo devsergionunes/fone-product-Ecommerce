@@ -6,7 +6,9 @@ export default function initApiShipping(){
     buttonShipping.addEventListener('click' , hendalShipping)
     function hendalShipping(event){
         event.preventDefault()
-        const reqshipping = fetch(`https://viacep.com.br/ws/${inputShipping.value}/json/`)
+        const regexp = /\D/g
+        const valueInput = inputShipping.value.replace(regexp , '')
+        const reqshipping = fetch(`https://viacep.com.br/ws/${valueInput}/json/`)
         reqshipping.then( response => response.json())
         .then(json => {
             creatEndereco(json)
