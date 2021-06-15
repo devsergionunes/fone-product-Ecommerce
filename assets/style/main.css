@@ -237,6 +237,7 @@
     }
     .desc-product .frete form input {
         padding: 3px;
+        margin-bottom: 5px;
     }
     .desc-product .frete form button {
         padding: 6px 8px;

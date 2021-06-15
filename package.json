@@ -1,0 +1,29 @@
+{
+  "name": "fone-lading-page",
+  "version": "1.0.0",
+  "description": "<img src=\"./github/gif-desktop.gif\" alt=\"gif-desktop\">\r <p align=\"center\">\r     Landing Page E-Commerce para compra fone de ouvido\r </p>",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack --mode production ./js/scripts.js -o ./",
+    "dev": "webpack --mode development --watch ./js/scripts.js -o ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devsergionunes/fone-product-Ecommerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devsergionunes/fone-product-Ecommerce/issues"
+  },
+  "homepage": "https://github.com/devsergionunes/fone-product-Ecommerce#readme",
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4"
+  },
+  "dependencies": {
+    "webpack": "^5.39.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
