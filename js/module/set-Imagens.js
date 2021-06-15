@@ -1,12 +1,28 @@
-export default function initSetImgs() {
-  const imgTamb = document.querySelector('[data-product="imagem"]');
-  const imagens = document.querySelector('[data-product="imagens"]');
-  function hendalImag(event) {
+export default class SetImgs {
+  constructor(imgTamb, imagens) {
+    this.imgTamb = document.querySelector(imgTamb);
+    this.imagens = document.querySelector(imagens);
+
+    // reescrevendo o this da da funcao
+    this.hendalImag = this.hendalImag.bind(this);
+  }
+
+  hendalImag(event) {
     event.preventDefault();
     const src = event.target.getAttribute('src');
     const alt = event.target.getAttribute('alt');
-    imgTamb.querySelector('img').alt = alt;
-    imgTamb.querySelector('img').src = src;
+    this.imgTamb.querySelector('img').alt = alt;
+    this.imgTamb.querySelector('img').src = src;
   }
-  imagens.addEventListener('click', hendalImag);
+
+  addEvent() {
+    this.imagens.addEventListener('click', this.hendalImag);
+  }
+
+  init() {
+    if (this.imgTamb && this.imagens) {
+      this.addEvent();
+    }
+    return this;
+  }
 }

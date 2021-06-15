@@ -1,19 +1,53 @@
 [
     {
-        "id" : 1,
-        "name" : "HIPER X ON-EAR",
+        "id": 1,
+        "name": "HIPER X ON-EAR",
         "type": "fone",
-        "descricao":{
+        "descricao": {
             "xxx": "xxx"
         },
-        "preco" : 89.99,
+        "preco": 89.99,
         "imagens": [
-            {"src": "./assets/imagens/fonee1.jpg" , "alt": "fone1"},
-            {"src": "./assets/imagens/fonee2.jpg" , "alt": "fone2"},
-            {"src": "./assets/imagens/fonee3.jpg" , "alt": "fone3"},
-            {"src": "./assets/imagens/fonee4.jpg" , "alt": "fone4"},
-            {"src": "./assets/imagens/fonee5.jpg" , "alt": "fone5"},
-            {"src": "./assets/imagens/fonee6.jpg" , "alt": "fone6"}
+            {
+                "src": "./assets/imagens/fonee1.jpg",
+                "alt": "fone1"
+            },
+            {
+                "src": "./assets/imagens/fonee2.jpg",
+                "alt": "fone2"
+            },
+            {
+                "src": "./assets/imagens/fonee4.jpg",
+                "alt": "fone4"
+            },
+            {
+                "src": "./assets/imagens/fonee5.jpg",
+                "alt": "fone5"
+            },
+            {
+                "src": "./assets/imagens/fonee6.jpg",
+                "alt": "fone6"
+            },
+            {
+                "src": "./assets/imagens/fonee1.jpg",
+                "alt": "fone1"
+            },
+            {
+                "src": "./assets/imagens/fonee2.jpg",
+                "alt": "fone2"
+            },
+            {
+                "src": "./assets/imagens/fonee4.jpg",
+                "alt": "fone4"
+            },
+            {
+                "src": "./assets/imagens/fonee5.jpg",
+                "alt": "fone5"
+            },
+            {
+                "src": "./assets/imagens/fonee6.jpg",
+                "alt": "fone6"
+            }
         ]
     }
 ]
