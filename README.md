@@ -41,6 +41,10 @@ https://viacep.com.br/ws/00000000/json/
     font-family: 'Montserrat', sans-serif
     icones: Font Awesome
 </pre>
+<hr>
+
+## Link para Teste:
+- https://devsergionunes.github.io/fone-product-Ecommerce/
 
 ## Consideraçoes:
 <p>
