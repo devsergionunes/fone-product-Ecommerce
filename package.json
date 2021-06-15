@@ -4,8 +4,8 @@
   "description": "<img src=\"./github/gif-desktop.gif\" alt=\"gif-desktop\">\r <p align=\"center\">\r     Landing Page E-Commerce para compra fone de ouvido\r </p>",
   "main": "index.html",
   "scripts": {
-    "build": "webpack --mode production ./js/scripts.js -o ./",
-    "dev": "webpack --mode development --watch ./js/scripts.js -o ./"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch"
   },
   "repository": {
     "type": "git",
@@ -18,11 +18,13 @@
   },
   "homepage": "https://github.com/devsergionunes/fone-product-Ecommerce#readme",
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.5",
+    "babel-loader": "^8.2.2",
     "eslint": "^7.28.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.4"
-  },
-  "dependencies": {
+    "eslint-plugin-import": "^2.23.4",
     "webpack": "^5.39.0",
     "webpack-cli": "^4.7.2"
   }

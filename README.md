@@ -5,11 +5,12 @@
 </p>
 
 # Funcionalidades: 
-- Simulador de frete usando Api externa
-- Requisiçao do produto a um arquivo externo em formato json simulando um banco de dados 
-- Menu mobile interativo
-- Pagina responsiva
-- Validaçao de diferentes modelos de cep por Regular Expression
+- Simulador de frete usando Api externa.
+- Requisiçao do produto a um arquivo externo em formato json simulando um banco de dados. 
+- Menu mobile interativo.
+- Browser suporte com babel.
+- Validaçao de diferentes modelos de cep por Regular Expression.
+- Pagina responsiva.
 <hr>
 
 ## Versao Mobile:
@@ -31,6 +32,7 @@ https://viacep.com.br/ws/00000000/json/
 - JavaScript
 - ESLint
 - webpack
+- Babel
 - Regular Expression
 - Api viacep https://viacep.com.br/ws/00000000/json/
 
