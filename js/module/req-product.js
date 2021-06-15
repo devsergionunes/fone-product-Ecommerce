@@ -1,26 +1,38 @@
-export default function initReqProducts() {
-  const domImagens = document.querySelector('[data-product="imagens"]');
-  const domTamb = document.querySelector('[data-product="imagem"]');
-  function creatTagImg(src, alt) {
-    const img = document.createElement('img');
-    img.setAttribute('src', src);
-    img.setAttribute('alt', alt);
-    return img;
+export default class ReqProducts {
+  constructor(url, domImagens, domTamb) {
+    this.url = url;
+    this.domImagens = document.querySelector(domImagens);
+    this.domTamb = document.querySelector(domTamb);
   }
 
-  const products = fetch('assets/api-product/product.json');
-  products.then((json) => json.json())
-    .then((product) => {
-      product.forEach((item) => {
-        item.imagens.forEach((imagem, index) => {
-          domImagens.appendChild(creatTagImg(imagem.src, imagem.alt));
-          if (index === 0) {
-            domTamb.append(creatTagImg(imagem.src, imagem.alt));
-          }
+  creatTagImg(src, alt) {
+    this.img = document.createElement('img');
+    this.img.setAttribute('src', src);
+    this.img.setAttribute('alt', alt);
+    return this.img;
+  }
+
+  reqAllImgs() {
+    const products = fetch(this.url);
+    products.then((json) => json.json())
+      .then((product) => {
+        product.forEach((item) => {
+          item.imagens.forEach((imagem, index) => {
+            this.domImagens.appendChild(this.creatTagImg(imagem.src, imagem.alt));
+            if (index === 0) {
+              this.domTamb.append(this.creatTagImg(imagem.src, imagem.alt));
+            }
+          });
         });
+      }).catch((erro) => {
+        console.log(Error(erro));
       });
-    })
-    .catch((erro) => {
-      console.log(Error(erro));
-    });
+  }
+
+  init() {
+    if (this.url && this.domTamb && this.domImagens) {
+      this.reqAllImgs();
+    }
+    return this;
+  }
 }
