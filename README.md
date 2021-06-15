@@ -29,6 +29,9 @@ https://viacep.com.br/ws/00000000/json/
 - Html5
 - Css3
 - JavaScript
+- ESLint
+- webpack
+- Regular Expression
 - Api viacep https://viacep.com.br/ws/00000000/json/
 
 ## Style:
