@@ -50,13 +50,14 @@ https://viacep.com.br/ws/00000000/json/
 
 ## Consideraçoes:
 <p>
-Desafio criado por <a href="https://www.linkedin.com/in/emmanuel-messias-535621127/">Emmanuel Messias</a>,
+<strong>Desafio</strong> criado por <a href="https://www.linkedin.com/in/emmanuel-messias-535621127/">Emmanuel Messias</a>,
  <a href="https://www.devchallenge.com.br/">DevChallenge</a>
 </p>
  <hr>
 
 ## OBSERVAÇOES:
 <pre>
-    Em caso de teste do codigo, use uma servidor local para que requisiçoes funcionem corretamente.
+    Codigo com uso de classes e Funçoes para demonstras o conhecimento em ambas.
+    Em caso de teste do codigo, use uma servidor local para que requisiçoes funcionem corretamente. 
     Live-server é um exemplo. 
 </pre>
